@@ -1,18 +1,19 @@
- body{
- font-size: 17px;
- line-height: 17px;
- color: #000000;
- font-weight:600;
- font-family: Cuprum, Arial, sans-serif;
+ body {
+   font-size: 17px;
+   line-height: 17px;
+   color: #000000;
+   font-weight: 600;
+   font-family: Cuprum,  Arial,  sans-serif;
  }
- .populars-product h2,
- .populars-brand h2{
+
+ .populars-product,
+ .populars-brand {
    font-size: 30px;
    line-height: 30px;
-   color:#3d546e;
+   color: #3d546e;
  }
- .brand,
- .model{
+
+ .brand, .model {
    font-size: 18px;
    line-height: 20px;
  }
