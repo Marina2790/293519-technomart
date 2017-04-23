@@ -13,7 +13,8 @@
    color: #3d546e;
  }
 
- .brand, .model {
+ .brand,
+ .model {
    font-size: 18px;
    line-height: 20px;
  }
