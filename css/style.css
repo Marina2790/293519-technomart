@@ -1,20 +1,153 @@
- body {
-   font-size: 17px;
-   line-height: 17px;
-   color: #000000;
-   font-weight: 600;
-   font-family: Cuprum,  Arial,  sans-serif;
- }
+body {
+  min-width: 1122px;
+  min-height: 1750px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-family: Cuprum, Arial, sans-serif;
+  background: ur("../technomart-index.png") no-repeat 50% 3px;
+}
 
- .populars-product,
- .populars-brand {
-   font-size: 30px;
-   line-height: 30px;
-   color: #3d546e;
- }
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper-main-top {
+  background-color: #33445a;
+  margin-bottom: 48px;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.index-logo {
+  width: 220px;
+  float: left;
+}
+
+.scan-form {
+  width: 240px;
+  float: left;
+}
+.menu-top {
+  width: 500px;
+  float: right;
+}
+
+.wrapper-main-bottom {
+  border-color:#f3f7f8;
+  margin-bottom: 59px;
+}
+
+.user-menu{
+display: inline;
+}
+
+.user-block-info {
+  width:248px;
+  float: left;
+  padding-left: 52px;
+  width: 251px;
+}
+
+.user-block-contacts {
+  width: 320px;
+  float: left;
+
+}
+.unauthorized {
+  width: 300px;
+  float: right;
+  margin-bottom:40px;
+}
+
+.navigation {
+  display: inline;
+}
+
+.features-item {
+  float: left;
+  width: 300px;
+  min-height: 123px;
+  margin-right: 20px;
+  background-color: red;
+  margin-bottom: 20px;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.slider-box {
+  margin-bottom: 53px;
+}
+ .info-slider1,
+ .info-slider2,
+ .link-slider1,
+ .link-slider2,
+ .feature-item {
+  display: none;
+}
+
+.populars-product {
+  min-height: 89px;
+  margin-bottom: 20px;
+}
+.populars-product a{
+
+
+}
+.product-item {
+  float: left;
+  width: 220px;
+  min-height: 318px;
+  margin-right: 20px;
+}
+
+.product-item:last-child {
+  margin-right: 0;
+}
+
+.populars-bran{
+min-height: 89px;
+margin-bottom: 20px;
+}
+
+.brand-item{
+  float:left;
+  width: 220px;
+  min-height: 145px;
+  margin-right: 20px;
+}
+
+.brand-item:last-child {
+  margin-right: 0;
+}
+
+.brand-item:nth-child(4) {
+margin-right: 0;
+margin-bottom: 20px;
+}
+
+
+
+
+
+.populars-product,
+.populars-brand {
+  font-size: 30px;
+  line-height: 30px;
+  color: #3d546e;
+}
+
 
  .brand,
  .model {
-   font-size: 18px;
-   line-height: 20px;
- }
+  font-size: 18px;
+  line-height: 20px;
+}
