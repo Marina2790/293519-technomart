@@ -9,14 +9,14 @@ body {
 }
 
 .clearfix::after {
-  content: "";
   display: table;
   clear: both;
+  content: '';
 }
 
 .wrapper-main-top {
-  background-color: #33445a;
   margin-bottom: 48px;
+  background-color: #33445a;
 }
 
 .container {
@@ -26,44 +26,58 @@ body {
 }
 
 .index-logo {
-  width: 220px;
   float: left;
+  width: 220px;
 }
 
 .scan-form {
-  width: 240px;
   float: left;
+  width: 240px;
 }
+
 .menu-top {
-  width: 500px;
   float: right;
+  width: 500px;
 }
 
 .wrapper-main-bottom {
-  border-color:#f3f7f8;
   margin-bottom: 59px;
+  border-color: #f3f7f8;
 }
 
-.user-menu{
-display: inline;
+.user-menu {
+  display: inline;
 }
 
 .user-block-info {
-  width:248px;
   float: left;
-  padding-left: 52px;
+  width: 248px;
   width: 251px;
+  padding-left: 52px;
+
 }
 
 .user-block-contacts {
-  width: 320px;
   float: left;
+  width: 320px;
+}
+
+.unauthorized {
+  float: right;
+  width: 300px;
+  margin-bottom: 40px;
+}
+
+.main-navig{
+    background-color: #33445a;
+    float: left;
+    min-height: 60px;
+    margin-bottom:120px;
+
 
 }
-.unauthorized {
-  width: 300px;
-  float: right;
-  margin-bottom:40px;
+.unauthorized li {
+    display: inline;
 }
 
 .navigation {
@@ -75,33 +89,46 @@ display: inline;
   width: 300px;
   min-height: 123px;
   margin-right: 20px;
-  background-color: red;
   margin-bottom: 20px;
+  background-color: red;
 }
 
 .features-item:last-child {
   margin-right: 0;
 }
 
-.slider-box {
-  margin-bottom: 53px;
+.slider-features {
+  display: flex;
+
 }
- .info-slider1,
+
+.info-slider1,
  .info-slider2,
  .link-slider1,
- .link-slider2,
- .feature-item {
+ .link-slider2,{
   display: none;
+}
+
+.features-right{
+display: flex;
+flex-direction: column-reverse;
+margin-bottom: 53px;
+}
+
+.feature-item{
+  background-color: red;
+  width: 300px;
+  min-height: 123px;
+
+
+
 }
 
 .populars-product {
   min-height: 89px;
   margin-bottom: 20px;
 }
-.populars-product a{
 
-
-}
 .product-item {
   float: left;
   width: 220px;
@@ -113,13 +140,13 @@ display: inline;
   margin-right: 0;
 }
 
-.populars-bran{
-min-height: 89px;
-margin-bottom: 20px;
+.populars-bran {
+  min-height: 89px;
+  margin-bottom: 20px;
 }
 
-.brand-item{
-  float:left;
+.brand-item {
+  float: left;
   width: 220px;
   min-height: 145px;
   margin-right: 20px;
@@ -130,13 +157,9 @@ margin-bottom: 20px;
 }
 
 .brand-item:nth-child(4) {
-margin-right: 0;
-margin-bottom: 20px;
+  margin-right: 0;
+  margin-bottom: 20px;
 }
-
-
-
-
 
 .populars-product,
 .populars-brand {
@@ -145,9 +168,8 @@ margin-bottom: 20px;
   color: #3d546e;
 }
 
-
- .brand,
- .model {
+.brand,
+.model {
   font-size: 18px;
   line-height: 20px;
 }
