@@ -32,12 +32,12 @@ body {
 
 .scan-form {
   float: left;
-  width: 240px;
+  width: 140px;
 }
 
 .menu-top {
   float: right;
-  width: 500px;
+  width:500px;
 }
 
 .wrapper-main-bottom {
@@ -47,6 +47,7 @@ body {
 
 .user-menu {
   display: inline;
+    color: white;
 }
 
 .user-block-info {
@@ -54,7 +55,6 @@ body {
   width: 248px;
   width: 251px;
   padding-left: 52px;
-
 }
 
 .user-block-contacts {
@@ -68,16 +68,15 @@ body {
   margin-bottom: 40px;
 }
 
-.main-navig{
-    background-color: #33445a;
-    float: left;
-    min-height: 60px;
-    margin-bottom:120px;
-
-
+.main-navig {
+  float: left;
+  min-height: 60px;
+  margin-bottom: 120px;
+  background-color: #33445a;
 }
-.unauthorized li {
-    display: inline;
+
+.unauthorized-item {
+  display: inline;
 }
 
 .navigation {
@@ -97,36 +96,60 @@ body {
   margin-right: 0;
 }
 
-.slider-features {
-  display: flex;
-
-}
-
 .info-slider1,
- .info-slider2,
- .link-slider1,
- .link-slider2,{
+.info-slider2,
+.link-slider1,
+.link-slider2 {
   display: none;
 }
 
-.features-right{
-display: flex;
-flex-direction: column-reverse;
-margin-bottom: 53px;
+.slider-box {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 53px;
 }
 
-.feature-item{
-  background-color: red;
+.features-right {
+  font-size: 0px;
+}
+
+.feature-item {
+  display: inline-block;
+  vertical-align: top;
   width: 300px;
   min-height: 123px;
+  background-color: red;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
 
-
-
+.feature-item:last-child {
+  margin-bottom: 0;
 }
 
 .populars-product {
-  min-height: 89px;
+  padding-right: 24px;
+  padding-left: 27px;
+  font-size: 0px;
   margin-bottom: 20px;
+}
+
+.banner-product,
+.banner-brand{
+display: inline-block;
+width: 500px;
+font-size: 30px;
+line-height: 30px;
+margin-right: 136px;
+}
+
+.populars-product .link,
+.populars-brand .link {
+    display: inline-block;
+  width: 253px;
+  height: 38px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .product-item {
@@ -134,42 +157,127 @@ margin-bottom: 53px;
   width: 220px;
   min-height: 318px;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .product-item:last-child {
   margin-right: 0;
 }
 
-.populars-bran {
-  min-height: 89px;
+.populars-brand{
+  padding-right: 24px;
+  padding-left: 23px;
+  font-size: 0px;
   margin-bottom: 20px;
 }
 
+.brand-block{
+  font-size: 0px;
+}
 .brand-item {
-  float: left;
+  display: inline-block;
   width: 220px;
   min-height: 145px;
   margin-right: 20px;
+  vertical-align: top;
 }
 
 .brand-item:last-child {
   margin-right: 0;
+  margin-bottom: 85px;
 }
 
 .brand-item:nth-child(4) {
   margin-right: 0;
   margin-bottom: 20px;
 }
-
-.populars-product,
-.populars-brand {
-  font-size: 30px;
-  line-height: 30px;
-  color: #3d546e;
+.index-content-wrapper{
+  height: 522px;
+  margin-bottom: 73px;
+}
+.index-content-top {
+  width: 700px;
+  margin-bottom: 56px;
 }
 
-.brand,
-.model {
-  font-size: 18px;
-  line-height: 20px;
+.banner-content-top{
+margin-bottom: 32px;
+}
+
+.index-content-bottom{
+  font-size: 0;
+}
+.slader-service{
+  display: none;
+}
+.service-menu{
+display: inline-block;
+width: 240px;
+min-height: 182px;
+font-size: 21px;
+}
+
+.service-delivery{
+  display: inline-block;
+  min-height: 182px;
+  font-size: 30px;
+}
+
+.banner-service-delivery{
+font-size: 30px;
+line-height: 24px;
+margin-bottom: 28px;
+}
+
+.content-delivery{
+  font-size: 12px;
+  width:240px;
+}
+
+.service-guarantee,
+.service-сredit,
+.service-delivery .link{
+  display: none;
+}
+
+.feature-company{
+float: left;
+width: 570px;
+min-height: 378px;
+}
+
+.contakts{
+  float: right;
+  width: 320px;
+  min-height: 378px;
+  margin-bottom: 85px;
+}
+
+.index-logo-bottom{
+  float: left;
+  width: 220px;
+  min-height: 68px;
+}
+
+.bottom-main{
+float: right;
+}
+
+.bottom-navigation{
+  display: inline;
+}
+
+.bottom-main-contacts{
+float: left;
+width: 380px;
+min-height: 60px;
+}
+
+.feature-it{
+  float:right;
+  min-height:
+}
+
+.feature-navigation{
+display: inline;
 }
