@@ -37,23 +37,22 @@ body {
 
 .menu-top {
   float: right;
-  width:500px;
+  width: 500px;
 }
 
 .wrapper-main-bottom {
   margin-bottom: 59px;
-  border-color: #f3f7f8;
+  min-height: 278px;
 }
 
 .user-menu {
   display: inline;
-    color: white;
+  color: white;
 }
 
 .user-block-info {
   float: left;
   width: 248px;
-  width: 251px;
   padding-left: 52px;
 }
 
@@ -68,11 +67,11 @@ body {
   margin-bottom: 40px;
 }
 
-.main-navig {
+.main-list {
   float: left;
-  min-height: 60px;
-  margin-bottom: 120px;
+  min-height: 56px;
   background-color: #33445a;
+  margin-bottom: 120px;
 }
 
 .unauthorized-item {
@@ -97,9 +96,9 @@ body {
 }
 
 .info-slider1,
-.info-slider2,
-.link-slider1,
-.link-slider2 {
+  .info-slider2,
+  .link-slider1,
+  .link-slider2 {
   display: none;
 }
 
@@ -135,17 +134,17 @@ body {
 }
 
 .banner-product,
-.banner-brand{
-display: inline-block;
-width: 500px;
-font-size: 30px;
-line-height: 30px;
-margin-right: 136px;
+.banner-brand {
+  display: inline-block;
+  width: 500px;
+  font-size: 30px;
+  line-height: 30px;
+  margin-right: 136px;
 }
 
 .populars-product .link,
 .populars-brand .link {
-    display: inline-block;
+  display: inline-block;
   width: 253px;
   height: 38px;
   font-size: 14px;
@@ -164,16 +163,17 @@ margin-right: 136px;
   margin-right: 0;
 }
 
-.populars-brand{
+.populars-brand {
   padding-right: 24px;
   padding-left: 23px;
   font-size: 0px;
   margin-bottom: 20px;
 }
 
-.brand-block{
+.brand-block {
   font-size: 0px;
 }
+
 .brand-item {
   display: inline-block;
   width: 220px;
@@ -191,93 +191,128 @@ margin-right: 136px;
   margin-right: 0;
   margin-bottom: 20px;
 }
-.index-content-wrapper{
+
+.index-content-wrapper {
   height: 522px;
   margin-bottom: 73px;
 }
+
 .index-content-top {
   width: 700px;
   margin-bottom: 56px;
 }
 
-.banner-content-top{
-margin-bottom: 32px;
+.content-top {
+  margin-bottom: 32px;
 }
 
-.index-content-bottom{
-  font-size: 0;
-}
-.slader-service{
-  display: none;
-}
-.service-menu{
-display: inline-block;
-width: 240px;
-min-height: 182px;
-font-size: 21px;
-}
-
-.service-delivery{
-  display: inline-block;
+.service-menu {
+  float: left;
+  width: 240px;
   min-height: 182px;
+  margin-right: 77px;
+  font-size: 21px;
+}
+
+.service-delivery {
+  float: left;
+  width: 320px;
   font-size: 30px;
 }
 
-.banner-service-delivery{
-font-size: 30px;
-line-height: 24px;
-margin-bottom: 28px;
+.banner-service-delivery {
+  font-size: 30px;
+  line-height: 24px;
+  margin-bottom: 28px;
 }
 
-.content-delivery{
+.content-delivery {
   font-size: 12px;
-  width:240px;
+  width: 240px;
+}
+
+.service-img {
+float: right;
+position: absolute;
 }
 
 .service-guarantee,
-.service-сredit,
-.service-delivery .link{
+.service-сredit{
   display: none;
 }
 
-.feature-company{
-float: left;
-width: 570px;
-min-height: 378px;
+.feature-company {
+  float: left;
+  width: 570px;
+  min-height: 378px;
 }
 
-.contakts{
+.contakts {
   float: right;
   width: 320px;
   min-height: 378px;
-  margin-bottom: 85px;
 }
 
-.index-logo-bottom{
+.wrapper-main-footer {
+  min-height: 194px;
+  margin-top: 85px;
+}
+
+.index-logo-bottom {
   float: left;
   width: 220px;
   min-height: 68px;
+  margin-bottom: 20px;
 }
 
-.bottom-main{
-float: right;
+.bottom-main {
+  min-height: 68px;
+  width: 560px;
+  float: right;
+  margin-bottom: 20px;
 }
 
-.bottom-navigation{
+.bottom-navigation {
   display: inline;
 }
 
-.bottom-main-contacts{
-float: left;
-width: 380px;
-min-height: 60px;
+.bottom-main-contacts {
+  float: left;
+  width: 380px;
+  min-height: 60px;
 }
 
-.feature-it{
-  float:right;
-  min-height:
-}
+.feature-list {
+  float: right;
+  min-height: }
 
 .feature-navigation{
 display: inline;
+}
+
+.footer-copyright-сompany {
+  float: left;
+  min-height: 46px;
+  width: 300px;
+  margin-right: 63px;
+}
+
+.footer-social {
+  float: left;
+  width: 150 px;
+  margin-right: 70px;
+}
+
+.footer-email {
+  float: right;
+  width: 310px;
+}
+
+.footer-feedback-сompany,
+.footer-developer {
+  display: inline-block;
+}
+
+.appointment-form {
+  display: none;
 }
