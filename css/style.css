@@ -67,6 +67,11 @@ body {
   margin-bottom: 40px;
 }
 
+.authorization{
+  float: right;
+  width: 300px;
+}
+
 .main-list {
   float: left;
   min-height: 56px;
@@ -315,4 +320,35 @@ display: inline;
 
 .appointment-form {
   display: none;
+}
+
+.breadcrumbs {
+ float: left;
+
+}
+
+.breadcrumbs-list{
+
+}
+
+.breadcrumbs-item {
+  display: inline;
+  display: none;
+}
+
+.sidebar {
+float: left;
+width: 220px;
+}
+
+.filter-catalog {
+width: 700px;
+padding-left: 18px;
+padding-right: 105px;
+min-height: 38px;
+}
+
+.sorting {
+  float: left;
+  width:
 }
