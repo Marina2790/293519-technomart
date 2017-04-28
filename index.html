@@ -4,20 +4,23 @@
 <head>
   <meta charset="utf-8">
   <title>Компания &laquo;техномарт&raquo;</title>
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
   <header class="main-header">
     <div class="wrapper-main-top">
       <div class="container clearfix">
-        <div class="index-logo"> <b>Техномарт</b>
+        <div class="index-logo">
+          <b1 class="logotype"> Техномарт</b1>
         </div>
         <form class="scan-form" action="#" method="get">
           <input type="image" src="img/icon-search.png" alt="Поиск:">
           <div class="scan">
-            <input type="text" name="scan" id="scan-field">
-            <label for="scan-field">Поиск:</label>
+            <input type="text" name="scan" id="scan-field" placeholder="Поиск:">
+            <label for="scan-field"></label>
           </div>
         </form>
         <ul class="menu-top">
@@ -34,14 +37,14 @@
       </div>
     </div>
     <div class="wrapper-main-bottom">
-      <div class="container clearfix">
-        <div class="user-block">
+      <div class="container">
+        <div class="user-block clearfix">
           <p class="user-block-info">
             Интеренет магазин строительных материалов и инструментов для ремонта
           </p>
           <section class="user-block-contacts">
             <a class="link-contact" href="#"> +7(812)555-05-55</a>
-            <p>
+            <p class="address">
               г. Санкт-Петербург, ул.Б. Конюшенная, д.19/8</p>
           </section>
           <div class="unauthorized">
@@ -50,7 +53,7 @@
                 <a class="login" href="#">Войти</a>
               </li>
               <li class="unauthorized-item">
-                <a class="new user" href="#">Регистрация</a>
+                <a class="new-user" href="#">Регистрация</a>
               </li>
             </ul>
           </div>
@@ -58,7 +61,7 @@
         <nav class="main-navigation clearfix">
           <ul class="main-list">
             <li class="navigation">
-              Главная
+              <a href="#">Главная</a>
             </li>
             <li class="navigation">
               <a href="#company">Компания</a>
@@ -269,8 +272,8 @@
 
   <footer class="main-footer">
     <div class="wrapper-main-footer">
-      <div class="container clearfix">
-        <div class="footer-main-top">
+      <div class="container">
+        <div class="footer-main-top clearfix">
           <div class="index-logo-bottom"><b>Техномарт</b>
           </div>
           <ul class="bottom-main">
@@ -291,7 +294,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-main-bottom">
+        <div class="footer-main-bottom clearfix">
           <section class="bottom-main-contacts clearfix">
             <p>г. Санкт-Петербург, ул.Б. Конюшенная, д.19/8 +7(812)555-05-55</p>
           </section>
@@ -338,9 +341,9 @@
   </footer>
   <form class="appointment-form" action="#" method="post">
     <label for="user-field">Ваше имя:</label><br>
-    <input type="text" name="user" id="user-field" placeholder="Представьтесь,пожалуйста"><br>
+    <input type="text" name="user" id="user-field" placeholder="Представьтесь,пожалуйста">
     <label for="email-field">Ваш-e-mail:</label><br>
-    <input type="text" name="email" id="email-field" placeholder="Для отправки ответа"><br>
+    <input type="text" name="email" id="email-field" placeholder="Для отправки ответа">
     <label for="text-letter">Текст письма:</label><br>
     <textarea name="text letter" id="text-letter" rows="3"></textarea><br>
     <input type="submit" value="Отправить">
