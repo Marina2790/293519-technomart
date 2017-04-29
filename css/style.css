@@ -5,7 +5,7 @@ body {
   font-size: 14px;
   font-weight: normal;
   font-family: Cuprum, Arial, sans-serif;
-  background: ur("../technomart-index.png") no-repeat 50% 3px;
+  background: ul("../technomart-index.png") no-repeat 50% 3px;
 }
 
 .container::after {
@@ -56,6 +56,7 @@ body {
 .menu-top {
   float: right;
   box-sizing: border-box;
+  width: 500px;
   list-style: none;
   font-size: 0px;
   margin: 0;
@@ -82,43 +83,56 @@ background-color: #6db254;
 }
 .wrapper-main-bottom {
   margin-bottom: 59px;
-  min-height: 278px;
+  padding-bottom: 60px;
   background: #f4f7f9;
 }
 
-.user-menu {
-  display: inline;
-  color: white;
+.breadcrumbs{
+  font-size: 0px;
 }
+.breadcrumbs-list{
+  display: inline-block;
+  padding: 21px 45px;
+  vertical-align: top;
+  font-size: 13px;
+  line-height:18px;
 
+}
+.user-block{
+float: left;
+box-sizing: border-box;
+width: 940px;
+    margin-bottom: 34px;
+  font-size: 0px;
+}
 .user-block-info {
-  float: left;
-  box-sizing: border-box;
+  display: inline-block;
   width: 200px;
   margin-top: 52px;
-  margin-bottom: 44px;
   margin-left: 54px;
   margin-right: 63px;
+  vertical-align: top;
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
-  vertical-align: top;
   color: #ff5357;
 }
 
 .user-block-contacts {
-  float: left;
-  box-sizing: border-box;
-  margin-top: 63px;
-  width: 275px;}
+  display: inline-block;
+  margin-top: 50px;
+  width: 275px;
+  vertical-align: top;}
 
 
 .link-contact{
+  display: inline-block;
  padding-top: 5px;
  padding-bottom: 5px;
  padding-left: 75px;
  padding-right: 58px;
  border: 2px solid white;
+ vertical-align: top;
  text-decoration: none;
  font-size: 21px;
  line-height: 17px;
@@ -126,6 +140,8 @@ background-color: #6db254;
 }
 
  .address{
+ display: inline-block;
+ vertical-align: top;
  padding-left: 13px;
  font-weight: bold;
  font-size: 14px;
@@ -135,18 +151,19 @@ background-color: #6db254;
 
 .unauthorized {
   float: right;
-  box-sizing: border-box;
-  margin-top: 45px;
+  margin-top: 50px;
   width: 340px;
 }
 
 .unauthorized-item{
   display: inline-block;
+  box-sizing: border-box;
   font-size: 0px;
 }
 
 .login,
 .new-user{
+  display: inline-block;
   font-size: 21px;
   line-height: 18px;
   padding-top: 8px;
@@ -177,8 +194,10 @@ background-color: #6db254;
 }
 
 .main-list {
+  float: left;
+  box-sizing: border-box;
+  width: 940px;
   background-color: #33445a;
-  margin-bottom: 84px;
   margin: 0px;
   padding: 0px;
   font-size: 0px;
@@ -210,24 +229,92 @@ background-color: #6db254;
 
 .features-item {
   float: left;
+  box-sizing: border-box;
   width: 300px;
   min-height: 123px;
   margin-right: 20px;
   margin-bottom: 20px;
-  background-color: red;
+  padding-top: 30px;
+  padding-left: 24px;
+  font-size: 0px;
+  background: no-repeat 85% 50%;
+
 }
+
+.name-item{
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  font-size: 24px;
+  line-height: 30px;
+  margin-right: 70px;
+
+}
+.link-features{
+  display: inline-block;
+  box-sizing: border-box;
+  width: 135px;
+  vertical-align: top;
+  margin-top: 10px;
+  padding: 10px 23px;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+
+.features-item:first-child {
+  background-color: #ffbf47;
+  background-image: url("../img/iconmaterial.png");
+}
+
+.new{
+  background: url("../img/newflag.png");
+}
+
+.features-item:nth-child(2){
+background-color:#3bbce3;
+background-image: url("../img/iconinstrym.png");
+}
+
+.features-item:nth-child(3){
+background-color:#dc91d8;
+background-image: url("../img/icontehnical.png");
+}
+
 
 .features-item:last-child {
   margin-right: 0;
 }
 
-.info-slider1,
   .info-slider2,
   .link-slider1,
   .link-slider2 {
   display: none;
 }
 
+.slider1{
+  position: relative;
+}
+.info-slider1{
+  position: absolute;
+  font-size: 30px;
+  line-height: 36px;
+  color: white;
+}
+
+.slider-name{
+  position: absolute;
+  top: 30px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+}
 .slider-box {
   float: left;
   margin-right: 20px;
