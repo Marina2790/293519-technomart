@@ -131,6 +131,7 @@ body {
   line-height: 24px;
   text-align: center;
   text-transform:uppercase;
+  margin: 0px;
 }
 
 .scan-form {
@@ -569,8 +570,10 @@ background-image: url("../img/icontehnical.png");
 display: inline-block;
 vertical-align: top;
   width: 220px;
+  height: 320px;
 margin-right: 17px;
 padding-bottom: 20px;
+font-family: "PT Sans", "Arial", sans-serif;
   font-size: 0px;
   border: 1px solid #f9f5f0;
 }
@@ -602,17 +605,45 @@ padding-bottom: 20px;
   text-decoration: line-through;
   color: #a9a9a9;
   margin-top: -10px;
-  margin-bottom: 10px;
+
   padding: 0 75px;
 }
 
 .main-price{
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 30px;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
 background-color:#ff5357;
 text-decoration: none;
+ border-radius: 5px 0 0 5px;
 color: white;
 width: 140px;
 padding: 10px 0;
+  margin-top: 10px;
 text-align: center;
+}
+
+.main-price:after, .main-price:before {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.main-price:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-left-color: #ff5357;
+  width: 140px;
+	border-width: 18px;
+	margin-top: -18px;
 }
 
 .populars-brand {
@@ -653,6 +684,7 @@ text-align: center;
   background-color:#f4f8fa;
   margin-bottom: 73px;
   padding-top: 60px;
+  padding-bottom: 100px;
 }
 
 .index-content-top {
@@ -676,36 +708,94 @@ text-transform: uppercase;
 }
 
 .index-content-bottom{
-  float: left;
+
 }
 .service-menu {
-
+  position: relative;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
   width: 240px;
-  min-height: 182px;
-  margin-right: 77px;
-  font-size: 21px;
+  margin-right: 80px;
+  font-size: 0px;
+
+}
+
+.service-menu::after{
+  content: "";
+  position: absolute;
+  left: 18px;
+  top:30px;
+  width: 468px;
+  height: 261px;
+ background: url("../img/Layer118.png") no-repeat;
+  background-position: 212px -100px;
+
+
+}
+
+.service-item{
+display: inline-block;
+width: 240px;
+vertical-align: top;
+font-size: 21px;
+line-height: 30px;
+
+}
+
+.service-item a{
+  display: block;
+padding: 13px 140px 13px 10px;
+text-decoration: none;
+}
+
+.delivery-service-menu{
+  font-weight: bold;
+  color:#3d546e;
+  background-color: white;
+}
+
+.guarantee-service-menu,
+.credit-service-menu{
+  color: white;
+  background-color: #3d546e;
+  border-bottom: 1px solid #000000;
+  font-weight: bold;
 }
 
 .service-delivery {
-  float: left;
-  width: 320px;
-  font-size: 30px;
+float: left;
+position: relative;
+width: 300px;
+}
+.service-delivery::after{
+  content: "";
+  position: absolute;
+  left: 115px;
+  top:30px;
+  width: 468px;
+  height: 261px;
+ background: url("../img/car.png") no-repeat;
+  background-position: 1px -10px;
+
 }
 
 .banner-service-delivery {
-  font-size: 30px;
-  line-height: 24px;
+  margin-top: 5px;
   margin-bottom: 28px;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #3d546e;
+
 }
 
 .content-delivery {
-  font-size: 12px;
-  width: 240px;
-}
-
-.service-img {
-float: right;
-position: absolute;
+  font-size: 13px;
+  line-height:24px;
+  width: 250px;
+  word-spacing: -1px;
 }
 
 .service-guarantee,
@@ -716,50 +806,188 @@ position: absolute;
 .feature-company {
   float: left;
   width: 570px;
-  min-height: 378px;
+  font-size: 0px;
+}
+
+.name-feature-company{
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.feature-company .content-top{
+  font-size: 13px;
+  line-height: 24px;
+max-width: 523px;
+margin: 0px;
+}
+
+.feature-company .content-bottom{
+  font-size: 13px;
+  line-height: 24px;
+max-width: 400px;
+}
+
+.feature-company .list-feature{
+font-size: 18px;
+line-height: 20px;
+}
+
+.feature-company .list-feature {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+margin: 0
+    }
+
+.feature-company .item-feature{
+      padding-left: 35px;
+      padding-bottom: 20px;
+      font-weight: bold;
+    }
+
+.feature-company .list-feature  .item-feature{
+       position: relative;
+      }
+.feature-company .list-feature  .item-feature:before {
+        content:  "____";
+        color:#ff5357;
+        font-weight: bold;
+        position: absolute;
+        left:     1px;
+        bottom: 27px;
+      }
+
+.feature-company a{
+  display: inline-block;
+  max-width: 220px;
+  padding: 4px 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 24px;
+  color: white;
+  text-decoration: none;
+  background-color: #ff5357;
+  border-radius: 3%;
+
 }
 
 .contakts {
   float: right;
   width: 320px;
-  min-height: 378px;
     margin-bottom: 85px;
 }
 
+.name-contakts{
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.content-contakts{
+  max-width: 181px;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.contakts a{
+  display: inline-block;
+  max-width: 300px;
+  padding: 8px 60px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+  text-decoration: none;
+  background-color: #ff5357;
+  border-radius: 3%;
+  margin-top: 20px;
+
+}
+
 .wrapper-main-footer {
-  min-height: 194px;
+  font-size:
+}
+.wrapper-main-footer{
+  background-color:#3d546e;
 }
 
 .index-logo-bottom {
   float: left;
+  display: inline-block;
+  padding: 20px 0px;
   width: 220px;
-  min-height: 68px;
-  margin-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color:#ff5357;
+  color: white;
 }
 
 .bottom-main {
-  min-height: 68px;
-  width: 560px;
   float: right;
+  width: 560px;
   margin-bottom: 20px;
+  margin: 0px;
+  padding: 0px;
+  font-size: 0px;
+
 }
 
-.bottom-navigation {
-  display: inline;
+.bottom-navigation{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0px;
+}
+
+.bottom-navigation a{
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 40px 24px;
+  text-decoration: none;
+  color: white;
+}
+.bottom-navigation-contacts{
+  padding-left: 0px;
 }
 
 .bottom-main-contacts {
   float: left;
   width: 380px;
-  min-height: 60px;
+}
+
+.bottom-main-content{
+font-size: 16px;
+line-height: 18px;
+max-width: 229px;
+color: white;
 }
 
 .feature-list {
   float: right;
-  min-height: }
+  font-size: 0px;
+  padding: 0px;
+ margin: 0px;}
 
 .feature-navigation{
-display: inline;
+display: inline-block;
+vertical-align: top;
+font-size: 0px;
+}
+
+.feature-list a{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 18px;
+  line-height: 18px;
+  color: white;
+  text-decoration: none;
+  padding: 0 40px;
 }
 
 .footer-copyright-сompany {
