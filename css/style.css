@@ -56,17 +56,7 @@ body {
     background-position: -102px -53px;
 }
 
-.sprite-icon-facebook-copy {
-    width: 10px;
-    height: 18px;
-    background-position: -124px -10px;
-}
 
-.sprite-icon-instagramm-copy {
-    width: 17px;
-    height: 17px;
-    background-position: -102px -83px;
-}
 
 .sprite-icon-login {
     width: 20px;
@@ -98,11 +88,7 @@ body {
     background-position: -47px -124px;
 }
 
-.sprite-icon-vk {
-    width: 20px;
-    height: 12px;
-    background-position: -87px -124px;
-}
+
 
 
 
@@ -922,7 +908,6 @@ margin: 0
 .feature-company .item-feature{
       padding-left: 35px;
       padding-bottom: 20px;
-      font-weight: bold;
     }
 
 .feature-company .list-feature  .item-feature{
@@ -931,7 +916,6 @@ margin: 0
 .feature-company .list-feature  .item-feature:before {
         content:  "____";
         color:#ff5357;
-        font-weight: bold;
         position: absolute;
         left:     1px;
         bottom: 27px;
@@ -1066,37 +1050,148 @@ font-size: 0px;
   vertical-align: top;
   font-size: 18px;
   line-height: 18px;
-  color: white;
+  color: #ffd180;
   text-decoration: none;
   padding: 0 24px;
 }
 
+.feature-list a:hover{
+color:
+}
+
+.wrapper-footer-bottom{
+background-color: #33445b;
+}
+
 .footer-copyright-сompany {
   float: left;
-  min-height: 46px;
+  box-sizing: border-box;
   width: 300px;
   margin-right: 63px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+
+}
+
+.footer-copyright-сompany .content{
+  display: inline-block;
+margin: 0px;
+margin-right: 150px;
+color: white;
+font-size: 16px;
+line-height: 18px;
+}
+
+.footer-copyright-сompany.content-top{
+  padding-top: 10px;}
+
+.footer-copyright-сompany.content-bottom{
+  margin: 0px;
+  padding: 0px;
+
 }
 
 .footer-social {
   float: left;
   width: 150 px;
   margin-right: 70px;
+  margin-top: 15px;
+  text-align: center;
+
+}
+
+.social-btn{
+display: inline-block;
+  background: #29384a url("../img/sprite.png") no-repeat center;
+width: 43px;
+height: 43px;
+font-size: 0;
+ vertical-align: top;
+ text-decoration: none;
+ -moz-border-radius: 22px;
+ 	-webkit-border-radius: 22px;
+ 	border-radius: 22px;
+}
+
+.social-btn-vk {
+background-position: -77px -108px;
+}
+
+.social-btn-fb {
+background-position: -108px 1px;
+}
+
+.social-btn-inst {
+  background-position: -89px -71px;
+}
+.social-btn:hover {
+  background-color: #ee3643;
+}
+.social-btn-vk:hover {
+background-position: -77px -108px;
+}
+
+.social-btn-fb:hover {
+background-position: -108px 1px;
+}
+
+.social-btn-inst:hover {
+  background-position: -89px -71px;
 }
 
 .footer-email {
   float: right;
+  box-sizing: border-box;
+  margin-right: 0px;
+  margin-top:10px;
+  margin-bottom:20px;
   width: 310px;
+  font-size: 0px;
 }
+
 
 .footer-feedback-сompany,
 .footer-developer {
   display: inline-block;
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 18px;
+
 }
+
+.footer-feedback-сompany .content,
+.footer-developer .content{
+  padding: 0px;
+  margin: 0px;
+  color: white;
+
+}
+
+.footer-email a{
+  display: inline-block;
+  font-size: 16px;
+  line-height: 18px;
+  vertical-align: top;
+  text-decoration: none;
+  margin-right: 30px;
+  color: #ffda96;
+}
+
+.footer-email a:hover{
+  text-decoration: underline;
+}
+
+.footer-email a:active{
+  color: #ee3643;
+    text-decoration:none;
+}
+
+
 
 .appointment-form {
   display: none;
 }
+
 
 .breadcrumbs{
  display: inline-block;
