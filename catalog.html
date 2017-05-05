@@ -91,18 +91,18 @@
     <div class="breadcrumbs">
       <ul class="breadcrumbs-list">
         <li class="breadcrumbs-item">
-          <a href="#">
+          <a class="breadcrumbs-home" href="#">
             <span class="icon-home"></span>
           </a>
         </li>
           <li class="breadcrumbs-item">
-          <a href="#">Каталог</a>
+          <a class="breadcrumbs-catalog" href="#">Каталог</a>
         </li>
           <li class="breadcrumbs-item">
-          <a href="#">Инструмент</a>
+          <a class="breadcrumbs-tool" href="#">Инструмент</a>
         </li>
-          <li class="breadcrumbs-items">
-          Перфораторы
+          <li class="breadcrumbs-item">
+        <a>Перфораторы</a>
         </li>
       </ul>
     </div>
@@ -122,8 +122,8 @@
          <div class="toggle toggle-max"></div>
        </div>
        <div class="price-controls">
-         <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-         <label class="max-price">до <input name="max-price" type="text" value="30000"></label>
+         <label class="min-price"><input name="min-price" type="text" value="0"></label>
+         <label class="max-price"><input name="max-price" type="text" value="30000"></label>
        </div>
      </div>
 
@@ -152,29 +152,25 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
-          <legend>Питание:</legend>
+        <fieldset class="radio-fieldset">
+          <legend class="radio-legend">Питание:</legend>
           <p class="radio">
-            <label>
-          <input type="radio" name="product groups" value="Аккумуляторные" checked>
-          Аккумуляторные
-        </label>
+          <input type="radio" name="product groups" value="Аккумуляторные" id="battery" checked>
+            <label for="battery">Аккумуляторные</label>
           </p>
           <p class="radio">
-            <label>
-          <input type="radio" name="product groups" value="Сетевые" checked>
-          Сетевые
-        </label>
+          <input type="radio" name="product groups" value="Сетевые" id="network" checked>
+          <label for="network">Сетевые</label>
           </p>
         </fieldset>
         <p class="button">
-          <button class="btn" type="submit">Показать</button>
+         <button class="btn-transparent" type="submit">Показать</button>
         </p>
       </form>
     </div>
     <div class="wrapper-filter-product">
     <div class="filter-catalog clearfix">
-      <ul>
+      <ul class="filter-list">
         <li class="sorting">
           Сортировка
         </li>
