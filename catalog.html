@@ -101,48 +101,52 @@
           <li class="breadcrumbs-item">
           <a href="#">Инструмент</a>
         </li>
-          <li class="breadcrumbs-item">
+          <li class="breadcrumbs-items">
           Перфораторы
         </li>
       </ul>
     </div>
     <div class="name-product-catalog">
-      <h1 class="banner-product-catalog">Перфораторы:</h1>
+      <h1 class="banner-product-catalog">Перфораторы</h1>
     </div>
     <div class="sidebar">
       <h2 class="name-sidebar">Фильтр:</h2>
       <form class="sidebar-form" action="#" method="get">
-        <div class="price">
-          <h2>Цена:</h2>
-          <div class="filter-price">
-            <div class="min-price"></div>
-            <div class="scale-price"></div>
-            <div class="max-price"></div>
-            <input class="min-price" type="text" name="min-price" id="min-price-field">
-            <span>-</span>
-            <input class="max-price" type="text" name="max-price" id="max-price-field">
-          </div>
-        </div>
-        <fieldset>
-          <legend>Производители:</legend>
-          <ul>
-            <li>
+          <h2 class="form-title">Цена:</h2>
+          <div class="range-filter">
+       <div class="range-controls">
+         <div class="scale">
+           <div class="bar"></div>
+         </div>
+         <div class="toggle toggle-min"></div>
+         <div class="toggle toggle-max"></div>
+       </div>
+       <div class="price-controls">
+         <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+         <label class="max-price">до <input name="max-price" type="text" value="30000"></label>
+       </div>
+     </div>
+
+        <fieldset class="brand-fieldset">
+          <legend class="drand-legend">Производители:</legend>
+          <ul class="list-checkbox">
+            <li class="catalog-checkbox">
               <input type="checkbox" name="Bosch" id="Bosch-field" checked>
               <label for="Bosch-field">Bosch</label>
             </li>
-            <li>
+            <li class="catalog-checkbox">
               <input type="checkbox" name="Enterscol" id="Enterscol-field">
               <label for="Enterscol-field">Интерскол</label>
             </li>
-            <li>
+            <li class="catalog-checkbox">
               <input type="checkbox" name="Macita" id="Macita-field" checked>
               <label for="Macita-field">Macita</label>
             </li>
-            <li>
+            <li class="catalog-checkbox">
               <input type="checkbox" name="Dewalt" id="Dewalt-field">
               <label for="Dewalt-field">Dewalt</label>
             </li>
-            <li>
+            <li class="catalog-checkbox">
               <input type="checkbox" name="Hitachi" id="Hitachi-field">
               <label for="Hitachi-field">Hitachi</label>
             </li>
