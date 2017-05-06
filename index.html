@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Компания &laquo;техномарт&raquo;</title>
-  <link href="css/normalize.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 
 </head>
@@ -15,14 +15,11 @@
     <div class="wrapper-main-top">
       <div class="container clearfix">
         <div class="index-logo">
-          <h1 class="logotype"> Техномарт</h1>
+          <h1 class="logotype">Техномарт</h1>
         </div>
-        <form class="scan-form" action="#" method="get">
-          <input  type="image" src="img/icon-search.png" alt="Поиск:">
-          <div class="scan">
-            <input class="scans" type="text" name="scan" id="scan-field" placeholder="Поиск:">
-            <label for="scan-field"></label>
-          </div>
+        <form action="#" method="post" class="search">
+          <input type="search" name="searchs" placeholder="Поиск" class="input" />
+          <input type="submit" name="submits" class="submit" />
         </form>
         <ul class="menu-top">
           <li class="user-menu active">
@@ -46,7 +43,7 @@
           <section class="user-block-contacts">
             <a class="link-contact" href="#"> +7(812)555-05-55 </a>
             <p class="address">
-            г. Санкт-Петербург, ул.Б. Конюшенная, д.19/8</p>
+              г. Санкт-Петербург, ул.Б. Конюшенная, д.19/8</p>
           </section>
           <div class="unauthorized">
             <ul class="unauthorized-item">
@@ -129,7 +126,7 @@
     </div>
     <div class="container populars-product">
       <h2 class="banner-product">Популярные товары:</h2>
-      <a class="link" href="#">Все популярные товары </a>
+      <a class="link" href="#">Все популярные товары</a>
     </div>
     <div class="container catalog">
       <div class="product-item">
@@ -171,7 +168,7 @@
         <div class="old-price">30500 р.</div>
         <div class="main-price">2550 p.</div>
       </div>
-      <div class="product-item">
+      <div class="product-item ">
         <div class="flag flag-new">новинка</div>
         <div class="actions">
           <a href="#" class="buy">Купить</a>
@@ -181,9 +178,9 @@
           <img src="img/bosch2000.jpg" width="218" height="164" alt="Перфоратор BOSCH BFG 2000">
         </div>
         <div class="title">
-          Перфоратор Bosch BFG 2000
+          Перфоратор BOSCH BFG 2000
         </div>
-        <div class="old-price">0</div>
+        <div class="old-price"></div>
         <div class="main-price">12500 p.</div>
       </div>
     </div>
