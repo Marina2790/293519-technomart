@@ -228,7 +228,7 @@ background-position: -3px -3px;
 }
 
 .user-block {
-  font-size: px;
+  font-size: 0;
 }
 
 .user-block-info {
@@ -246,7 +246,7 @@ background-position: -3px -3px;
 
 .user-block-contacts {
   float: left;
-  margin: px;
+  margin: 0;
   margin-left: 70px;
   margin-right: 70px;
   width: 270px;
