@@ -61,11 +61,16 @@ body {
   text-transform: uppercase;
 }
 
-.logotype:hover,
-.logotype:active {
+.logotype:hover{
   background-color: #ca2c37;
   box-shadow: 0 5px 0 #9a212a;
 }
+
+.logotype:active{
+  background-color: #ba2732;
+  box-shadow: 0 5px 0 #8e1e26;
+}
+
 
 .scan {
   position: relative;
@@ -74,13 +79,9 @@ body {
   height: 29px;
 }
 
-::-webkit-input-placeholder {
-  color: white;
-}
-
-.scan .new-search {
+.new-search {
   width: 100%;
-  padding: 9px 37px 9px 50px;
+  padding: 11px 37px 11px 50px;
   border: none;
   top: 10px;
   left: 21px;
@@ -92,15 +93,7 @@ body {
   outline: none;
 }
 
-.scan .new-search:focus {
-  background-color: white;
-}
-
-.scan .new-search:hover {
-  background: #212a3a;
-}
-
-.scan .send {
+.send {
   position: absolute;
   border: none;
   font-size: 0;
@@ -110,22 +103,38 @@ body {
   width: 17px;
   height: 17px;
   background-position: -109px -34px;
-  opacity: 1;
   height: 80%;
   cursor: pointer;
   opacity: 0.3;
 }
 
-.scan .send :focus {
-  background: url("../img/sprite.png");
-  width: 17px;
-  height: 17px;
-  background-position: -5px -111px;
+.new-search::-webkit-input-placeholder {
+color: white;
 }
 
-.scan .send:hover {
-  opacity: 1;
+.new-search:hover{
+  background-color: #212a3a;
+opacity: 1;
 }
+
+.new-search:hover + .send{
+  background-color: #212a3a;
+opacity: 1;
+}
+
+.new-search:focus{
+  background-color: white;
+  color: #000000;
+}
+
+.new-search:focus + .send{
+  width: 17px;
+     height: 17px;
+     opacity: 1;
+     background-position: -5px -111px;
+     background-color: white;
+}
+
 
 .menu-top {
   float: right;
@@ -205,12 +214,12 @@ body {
 }
 
 .purchase-menu-top {
-  background-color: #6db254;
-  opacity: 0.9;
+  background-color: #63a63e;
+  color:#ffffff;
 }
 
 .purchase-menu-top:hover {
-  opacity: 1;
+  background-color: #5fbb2d;
 }
 
 .purchase-menu-top:active {
