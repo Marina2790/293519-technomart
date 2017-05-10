@@ -57,6 +57,7 @@ body {
   box-sizing: border-box;
   color: white;
   word-wrap: break-word;
+  font-weight: normal;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
@@ -309,7 +310,7 @@ opacity: 1;
   padding: 1px 13px;
   vertical-align: top;
   letter-spacing: 0.1px;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
@@ -788,7 +789,7 @@ display:none;
   z-index: 10;
 }
 
-.actions .buy,
+
 .actions .bookmark {
   display: block;
   position: relative;
@@ -808,6 +809,27 @@ display:none;
   text-transform: uppercase;
   border-radius: 3px;
 }
+
+.actions .buy{
+  display: block;
+  position: relative;
+  width: 135px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 9px 0;
+    border-bottom: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  background-color: #63a63e;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Cuprum", sans-serif;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
 
 .actions .buy::before{
   position: absolute;
@@ -1154,6 +1176,7 @@ color: white;
   word-wrap: break-word;
   padding-bottom: 30px;
   font-size: 30px;
+  font-weight: normal;
   line-height: 24px;
   margin: 0;
 }
@@ -1233,6 +1256,7 @@ color: white;
   margin: 0;
   margin-bottom: 30px;
   padding-left: 20px;
+  font-weight: normal;
   text-transform: uppercase;
   word-wrap: break-word;
   font-size: 30px;
@@ -1352,6 +1376,7 @@ color: white;
   max-width: 334px;
   font-size: 16px;
   line-height: 18px;
+  font-weight: normal;
   color: white;
   margin: 0;
 }
@@ -1672,6 +1697,7 @@ body .catalog {
   width: 300px;
   font-size: 21px;
   line-height: 18px;
+  font-weight: normal;
   background-color: white;
   color: #000000;
   margin: 0;
@@ -2151,7 +2177,6 @@ color: rgba(50, 66, 92, 0.3);
 
 .filter-list {
   box-sizing: border-box;
-  position: relative;
   background-color: #f7f3ec;
   width: 700px;
   margin: 0;
@@ -2182,7 +2207,8 @@ color: rgba(50, 66, 92, 0.3);
   font-size: 13px;
   font-family: "PTSans", sans-serif;
   line-height: 18px;
-  padding: 8px 0 8px 30px;
+  border-bottom: 1px dotted  #ee3643;
+margin: 8px 0 8px 30px;
   vertical-align: top;
   text-align: center;
   text-transform: uppercase;
@@ -2197,46 +2223,55 @@ color: rgba(50, 66, 92, 0.3);
 
 .filter-catalog a:hover {
   color: #000000;
+  border-bottom: 1px solid  #ee3643;
 }
 
-.filter-list::before {
-  content: "";
+.filter-catalog{
+  position: relative;
+}
+
+.icon-bottom{
   position: absolute;
-  width: 0;
-  height: 0;
-  right: 20px;
+  left: 677px;
   top: 10px;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 10px solid #c6c2bd;
 }
 
-.filter-list::after {
-  content: "";
+.icon-top{
   position: absolute;
-  width: 0;
-  height: 0;
+  left: 677px;
   top: 10px;
-  right: 50px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #c6c2bd;
+}
+
+
+.filter-catalog .icon-bottom:hover{
+  border-top: 10px solid #000000;
+}
+
+.filter-catalog .icon-bottom:active{
+  border-top: 10px solid #ee3643;
+}
+
+.filter-catalog  .actives {
+  position: absolute;
+  left: 660px;
+  top: 10px;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 10px solid #ee3643;
 }
 
-.filter-list:hover::before {
-  border-top: 10px solid #000000;
+.filter-catalog .icon-top:hover{
+    border-bottom: 10px solid #000000;
 }
 
-.filter-list:hover::after {
-  border-bottom: 10px solid #c6c2bd;
-}
-
-.filter-list:active::before {
-  border-top: 10px solid #ee3643;
-}
-
-.filter-list:active::after {
-  border-bottom: 10px solid #ee3643;
+.filter-catalog .icon-top:active{
+    border-bottom: 10px solid #ee3643;
 }
 
 .wrapper-info {
