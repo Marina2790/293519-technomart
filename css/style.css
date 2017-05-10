@@ -42,6 +42,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-size: 0;
+  font-weight: normal;
   color: white;
   background-color: #ff5357;
   box-shadow: 0 5px 0 #b52933;
@@ -557,6 +558,7 @@ color: rgba(255, 255, 255, 0.5);
   border-top: 0.2em solid #ffffff;
   transform: rotate(45deg);
   margin-right: 0.5em;
+  cursor: pointer;
 }
 
 .slider1::before {
@@ -572,6 +574,7 @@ color: rgba(255, 255, 255, 0.5);
   border-top: 0.2em solid #ffffff;
   transform: rotate(-140deg);
   margin-right: 0.5em;
+  cursor: pointer;
 }
 
 .info-slider1 {
@@ -619,6 +622,63 @@ color: rgba(255, 255, 255, 0.5);
 .link-slider1:active {
   background-color: #ba2732;
 }
+
+.btn-left[type="checkbox"] {
+display:none;
+}
+
+.btn-left[type="checkbox"] + .left::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 220px;
+  left: 295px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+  .btn-left[type="checkbox"]:checked + .left::after {
+    content: "";
+    position: absolute;
+    left: 297px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ff5357;
+    top:222px;
+    cursor: pointer;
+  }
+
+  .btn-right[type="checkbox"] {
+  display:none;
+  }
+
+  .btn-right[type="checkbox"] + .right::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 220px;
+    left: 315px;
+    cursor: pointer;
+  }
+
+    .btn-right[type="checkbox"]:checked + .right::after {
+      content: "";
+      position: absolute;
+      left: 317px;
+      top:222px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #ff5357;
+      cursor: pointer;
+    }
 
 .slider-box {
   float: left;
@@ -1218,8 +1278,9 @@ color: white;
 
 .index-logo-bottom {
   float: left;
-  padding: 10px 0;
   width: 220px;
+  padding: 10px 0;
+  font-weight: normal;
   font-size: 30px;
   text-transform: uppercase;
   word-wrap: break-word;
@@ -1547,6 +1608,7 @@ color: white;
   margin-left: 240px;
 }
 
+
 .paginator a {
   display: inline-block;
   vertical-align: top;
@@ -1567,7 +1629,8 @@ color: white;
   text-decoration: none;
 }
 
-.current {
+.paginator .current {
+  color:white;
   background-color: #ee3643;
 }
 
@@ -1925,6 +1988,7 @@ color: rgba(50, 66, 92, 0.3);
   text-transform: uppercase;
   padding-left: 35px;
   cursor: pointer;
+  text-align: justify;
 }
 
 .brand-checbox[type="checkbox"] + .brand-marker::before {
@@ -1935,7 +1999,7 @@ color: rgba(50, 66, 92, 0.3);
   border: 2px solid #c1c1c1;
   border-radius: 5px;
   position: absolute;
-  top: -3px;
+  top: -4px;
   left: 0;
 }
 
@@ -1950,7 +2014,7 @@ color: rgba(50, 66, 92, 0.3);
 .brand-checbox[type="checkbox"]:checked + .brand-marker::after {
   content: "";
   position: absolute;
-  top: -3px;
+  top: -4px;
   left: 0;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
@@ -2004,6 +2068,7 @@ color: rgba(50, 66, 92, 0.3);
   position: relative;
   margin: 10px 0;
   font-size: 15px;
+  text-align: justify;
   line-height: 20px;
   text-transform: uppercase;
   padding-left: 35px;
@@ -2021,7 +2086,7 @@ color: rgba(50, 66, 92, 0.3);
   border: 3px solid #c1c1c1;
   border-radius: 50%;
   position: absolute;
-  top: 0;
+  top: -4px;
   left: 0;
 }
 
@@ -2044,6 +2109,7 @@ color: rgba(50, 66, 92, 0.3);
   height: 25px;
   background-position: -42px -38px;
   opacity: 0.8;
+  top:-4px;
 }
 
 .field-radio[type="radio"]:checked + .filed-sign:hover::after {
@@ -2096,10 +2162,11 @@ color: rgba(50, 66, 92, 0.3);
 
 .sorting {
   box-sizing: border-box;
-  padding: 8px 0;
+  padding: 8px 10px;
   width: 132px;
   display: inline-block;
   vertical-align: top;
+  text-align: justify;
   margin-right: 100px;
   font-size: 13px;
   font-family: "PTSans", sans-serif;
@@ -2107,7 +2174,8 @@ color: rgba(50, 66, 92, 0.3);
   text-transform: uppercase;
 }
 
-.filter-catalog a {
+.filter-items,
+.name-filter-price {
   display: inline-block;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -2119,8 +2187,13 @@ color: rgba(50, 66, 92, 0.3);
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: #c6c2bd;
+  color: #bbb8b3;
 }
+
+.filter-list .active{
+  color: #ee3643;
+}
+
 
 .filter-catalog a:hover {
   color: #000000;
@@ -2147,7 +2220,7 @@ color: rgba(50, 66, 92, 0.3);
   right: 50px;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 10px solid #c6c2bd;
+  border-bottom: 10px solid #ee3643;
 }
 
 .filter-list:hover::before {
@@ -2155,7 +2228,7 @@ color: rgba(50, 66, 92, 0.3);
 }
 
 .filter-list:hover::after {
-  border-bottom: 10px solid #000000;
+  border-bottom: 10px solid #c6c2bd;
 }
 
 .filter-list:active::before {
@@ -2176,6 +2249,7 @@ color: rgba(50, 66, 92, 0.3);
 .info-product .title {
   text-transform: uppercase;
   word-wrap: break-word;
+  font-weight: normal;
   font-size: 30px;
   line-height: 24px;
   margin: 0;
@@ -2186,6 +2260,16 @@ color: rgba(50, 66, 92, 0.3);
   font-size: 13px;
   line-height: 24px;
   word-wrap: break-word;
+  margin: 0;
+  padding: 0;
+}
+
+.info-product .contents {
+  font-size: 13px;
+  line-height: 24px;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 0;
 }
 
 /* Всплывающая форма index */
