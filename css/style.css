@@ -820,7 +820,7 @@ display:none;
   width: 135px;
   margin: 0 auto;
   margin-bottom: 7px;
-  padding: 9px 0;
+  padding: 11px 0;
     border-bottom: 3px solid #63a63e;
   border-bottom-color: #367315;
   background-color: #63a63e;
@@ -1022,15 +1022,13 @@ background-color: #518534;
   border-radius: 3px;
 }
 
-.populars-brand .link {
-  padding: 8px 67px;
-}
+
 
 .populars-brand {
   padding-right: 24px;
   padding-left: 23px;
   font-size: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .brand-block {
@@ -1071,8 +1069,8 @@ background-color: #518534;
 .index-content-wrapper {
   background-color: #f4f8fa;
   margin-bottom: 73px;
-  padding-top: 68px;
-  padding-bottom: 115px;
+  padding-top: 70px;
+  padding-bottom: 107px;
 }
 
 .index-content-top {
@@ -1210,7 +1208,7 @@ color: white;
 
 .information-company {
   padding: 0;
-  margin-bottom: 88px;
+  margin-bottom: 85px;
 }
 
 .feature-company {
@@ -1222,7 +1220,7 @@ color: white;
 .name-feature-company {
   text-transform: uppercase;
   word-wrap: break-word;
-  padding-bottom: 30px;
+  padding-bottom: 32px;
   padding-top: 3px;
   font-size: 30px;
   font-weight: normal;
@@ -1301,6 +1299,7 @@ color: white;
 .contacts {
   float: right;
   width: 320px;
+  margin-top: 5px;
 }
 
 .chart{
@@ -1472,9 +1471,13 @@ margin-left: 20px;
 
 .wrapper-footer-bottom {
   background-color: #33445b;
-  padding-top: 15px;
-  padding-bottom: 34px;
+  padding-top: 37px;
+  padding-bottom: 37px;
   padding-right: 10px;
+}
+
+.catalog .wrapper-footer-bottom{
+margin-bottom: 30px;
 }
 
 .footer-copyright-сompany {
@@ -1647,6 +1650,7 @@ margin-left: 20px;
   position: absolute;
   background: url("../img/sprite.png");
   top: 8px;
+  left:-1px;
   width: -25px;
   height: 12px;
   margin-right: 30px;
@@ -1715,6 +1719,10 @@ margin-left: 20px;
   background-color: #ee3643;
 }
 
+.paginator  .next{
+  padding: 10px 15px;
+}
+
 .paginator a:hover {
   border: 1px solid #bdc6ca;
 }
@@ -1758,7 +1766,7 @@ body .catalog {
   color: #000000;
   margin: 0;
   margin-top:-2px;
-  padding: 10px 63px 10px 50px;
+  padding: 10px 63px 14px 50px;
   margin-bottom: 8px;
   border-radius: 3px;
   text-align: center;
@@ -1885,7 +1893,7 @@ color: rgba(50, 66, 92, 0.3);
 
 .breadcrumbs-catalog::after {
   position: relative;
-  top: 6px;
+  top: 3px;
   left: 10px;
   content: "";
   display: inline-block;
@@ -1900,8 +1908,8 @@ color: rgba(50, 66, 92, 0.3);
 
 .breadcrumbs-tool::after {
   position: relative;
-  top: 6px;
-  left: 6px;
+  top: 4px;
+  left: 5px;
   content: "";
   display: inline-block;
   vertical-align: top;
@@ -1989,7 +1997,7 @@ color: rgba(50, 66, 92, 0.3);
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
-  margin-bottom: 13px;
+  margin-bottom: 9px;
   border-radius: 5px;
   background: #f7f3ec;
 }
@@ -2034,7 +2042,7 @@ color: rgba(50, 66, 92, 0.3);
   font-size: 17px;
   display: inline-block;
   vertical-align: top;
-  width: 50%;
+  width: 52%;
 }
 
 .max-price {
@@ -2050,8 +2058,8 @@ color: rgba(50, 66, 92, 0.3);
 .min-price::after {
   content: "__";
   position: absolute;
-  top: 0;
-  left: 108px;
+  top: 4px;
+  left: 105px;
   background-position: -5px -38px;
 }
 
@@ -2059,7 +2067,7 @@ color: rgba(50, 66, 92, 0.3);
   box-sizing: border-box;
   font-size: 17px;
   width: 90px;
-  padding: 5px 10px;
+  padding: 8px 10px;
   text-align: center;
   color: #283136;
   border: none;
@@ -2145,7 +2153,7 @@ color: rgba(50, 66, 92, 0.3);
   margin-bottom: 15px;
 }
 
-.drand-legend.footer-social {
+.drand-legend {
   width: 220px;
   box-sizing: border-box;
   margin: 0;
@@ -2158,13 +2166,14 @@ color: rgba(50, 66, 92, 0.3);
   width: 220px;
   box-sizing: border-box;
   word-wrap: break-word;
+  letter-spacing: 2px;
 }
 
 .radio-legend {
   width: 220px;
   box-sizing: border-box;
   margin: 0;
-  padding: 18px 0 7px 0;
+  padding: 11px 0 7px 0;
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
@@ -2173,6 +2182,7 @@ color: rgba(50, 66, 92, 0.3);
   width: 220px;
   box-sizing: border-box;
   word-wrap: break-word;
+  letter-spacing: 2px;
 }
 
 
@@ -2190,7 +2200,7 @@ color: rgba(50, 66, 92, 0.3);
   text-transform: uppercase;
   padding-left: 35px;
   cursor: pointer;
-  top: 0;
+  top: 0px;
   left: 0;
 }
 
@@ -2203,7 +2213,7 @@ color: rgba(50, 66, 92, 0.3);
   border: 3px solid #c1c1c1;
   border-radius: 50%;
   position: absolute;
-  top: -4px;
+  top: -5px;
   left: 0;
 }
 
@@ -2226,7 +2236,7 @@ color: rgba(50, 66, 92, 0.3);
   height: 25px;
   background-position: -42px -38px;
   opacity: 0.8;
-  top:-4px;
+  top:-5px;
 }
 
 .field-radio[type="radio"]:checked + .filed-sign:hover::after {
@@ -2240,8 +2250,8 @@ color: rgba(50, 66, 92, 0.3);
 .btn-transparent {
   display: block;
   margin: 0;
-  margin-top: 60px;
-  padding: 6px 35px;
+  margin-top: 66px;
+  padding: 9px 35px;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -2409,8 +2419,8 @@ margin: 8px 0 8px 56px;
   position: absolute;
   display: none;
   top: 2520px;
-  left: 520px;
-  margin-left: -230px;
+  left: 640px;
+  margin-left: -190px;
   width: 620px;
   box-sizing: border-box;
   padding: 45px 80px 50px 80px;
@@ -2475,7 +2485,8 @@ margin: 8px 0 8px 56px;
 
 .appointment-form {
   width: 460px;
-  margin: 0 auto;
+  margin-top:-28px;
+  margin-left: -10px;
   padding: 20px;
   background-color: #ffffff;
 }
@@ -2495,6 +2506,7 @@ margin: 8px 0 8px 56px;
   box-sizing: border-box;
   height: 37px;
   margin-bottom: 10px;
+  margin-top: -10px;
   padding: 2px 15px;
   font-family: "PTSans", sans-serif;
   font-size: 13px;
@@ -2508,6 +2520,7 @@ margin: 8px 0 8px 56px;
   box-sizing: border-box;
   height: 37px;
   margin-bottom: 10px;
+  margin-top: -10px;
   padding: 2px 15px;
   font-family: "PTSans", sans-serif;
   border: 1px solid #dee3e4;
@@ -2520,6 +2533,7 @@ margin: 8px 0 8px 56px;
   width: 220px;
   display: inline-block;
   vertical-align: top;
+  margin-top: 10px;
 }
 
 .appointment-form-name {
@@ -2528,7 +2542,7 @@ margin: 8px 0 8px 56px;
 
 .appointment-form-text .text-name {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 9px;
   font-size: 18px;
 }
 
@@ -2547,11 +2561,12 @@ margin: 8px 0 8px 56px;
 
 .appointment-form-text {
   margin-bottom: 40px;
+  margin-top: -11px;
 }
 
 .wrapper-submit {
   width: 620px;
-  margin-left: -100px;
+  margin-left: -81px;
   margin-bottom: -100px;
   padding: 37px 0;
   background-color: #f4f4f4;
@@ -2561,9 +2576,9 @@ margin: 8px 0 8px 56px;
   display: block;
   width: 460px;
   box-sizing: border-box;
-  margin-left: 100px;
+  margin-left: 80px;
   color: white;
-  padding: 8px 0px;
+  padding: 11px 10px;
   background: #ff5357;
   font-family: "Cuprum", sans-serif;
   text-transform: uppercase;
@@ -2578,11 +2593,10 @@ margin: 8px 0 8px 56px;
 /* Всплывающая форма catalog */
 
 .modal-content-catalog {
-  display: none;
   position: absolute;
+  display: none;
   top: 412px;
-  left: 20%;
-  ;
+  left: 450px;
   width: 620px;
   box-sizing: border-box;
   padding: 50px 80px;
@@ -2629,7 +2643,7 @@ margin: 8px 0 8px 56px;
   width: 100%;
   margin: 0;
   padding: 0;
-  padding: 40px 30px 30px 120px;
+  padding: 20px 30px 70px 100px;
   box-sizing: border-box;
   word-wrap: break-word;
   font-size: 30px;
@@ -2639,7 +2653,7 @@ margin: 8px 0 8px 56px;
 .content-window::before {
   content: "";
   position: absolute;
-  top: 15px;
+  top: 5px;
   left: 1px;
   width: 63px;
   height: 63px;
@@ -2650,7 +2664,7 @@ margin: 8px 0 8px 56px;
 .content-window::after {
   content: "";
   position: absolute;
-  top: 30px;
+  top: 20px;
   left: 18px;
   content: "";
   display: inline-block;
@@ -2666,7 +2680,7 @@ margin: 8px 0 8px 56px;
 .wrapper-window {
   width: 460px;
   font-size: 0;
-  padding: 38px 80px;
+  padding: 50px 80px;
   margin-left: -80px;
   background-color: #f1f1f1;
 }
