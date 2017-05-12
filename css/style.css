@@ -1560,7 +1560,7 @@ body {
 
 .bottom-main {
   float: right;
-  width: 540px;
+  width: 572px;
   margin: 0;
   padding: 0;
   font-size: 0;
@@ -1570,15 +1570,6 @@ body {
   display: inline-block;
   vertical-align: top;
   font-size: 0;
-}
-
-.bottom-navigation:last-of-type {
-margin-right: 0;
-}
-
-.bottom-navigation:last-of-type a{
-padding-left: 18px;
-padding-right: 0;
 }
 
 .bottom-navigation a {
@@ -1591,6 +1582,15 @@ padding-right: 0;
   vertical-align: top;
   text-decoration: none;
   color: white;
+}
+
+.bottom-navigation:last-of-type {
+margin-right: 0;
+}
+
+.bottom-navigation:last-of-type a{
+padding-left: 18px;
+padding-right: 0;
 }
 
 .bottom-navigation a:hover {
@@ -1632,7 +1632,7 @@ padding-right: 0;
 }
 
 .bottom-main-contacts .content-contacts{
-  margin-top: 10px;
+  margin-top: 7px;
   letter-spacing: 1.5px;
 }
 
@@ -2400,6 +2400,7 @@ width: 80%;
   position: relative;
   display: block;
   margin: 10px 0;
+  margin-bottom: 20px;
   padding-left: 35px;
   top: -6px;
   left: 0;
@@ -2454,7 +2455,7 @@ width: 80%;
 .btn-transparent {
   display: block;
   margin: 0;
-  margin-top: 64px;
+  margin-top: 53px;
   padding: 9px 35px;
   font-size: 13px;
   line-height: 18px;
