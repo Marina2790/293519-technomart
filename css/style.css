@@ -1588,11 +1588,6 @@ body {
 margin-right: 0;
 }
 
-.bottom-navigation:last-of-type a{
-padding-left: 18px;
-padding-right: 0;
-}
-
 .bottom-navigation a:hover {
   text-decoration: underline;
 }
@@ -1613,14 +1608,14 @@ padding-right: 0;
 
 .bottom-main-contacts {
   float: left;
-  width: 330px;
+  width: 350px;
   letter-spacing: 1px;
 }
 
 .bottom-main-content,
 .content-contacts{
   display: inline-block;
-  max-width: 334px;
+  max-width: 370px;
   margin: 0;
   font-size: 16px;
   line-height: 18px;
@@ -1629,9 +1624,6 @@ padding-right: 0;
   word-wrap: break-word;
   color: white;
   letter-spacing: 0.7px;
-}
-
-.bottom-main-contacts .content-contacts{
   margin-top: 7px;
   letter-spacing: 1.5px;
 }
@@ -2634,9 +2626,9 @@ width: 80%;
   box-sizing: border-box;
   position: absolute;
   display: none;
-  margin-left: -190px;
+  margin-left: -310px;
   top: 2520px;
-  left: 638px;
+  left: 50%;
   width: 620px;
   padding: 63px 80px 50px 80px;
   z-index: 30;
@@ -2746,7 +2738,7 @@ width: 80%;
   vertical-align: middle;
 }
 
-.appointment-form-name
+.appointment-form-name,
 .appointment-form-email {
   display: inline-block;
   margin-top: 10px;
@@ -2821,9 +2813,10 @@ width: 80%;
   box-sizing: border-box;
   position: absolute;
   padding: 50px 80px;
+  margin-left: -310px;
   z-index: 30;
   top: 412px;
-  left: 450px;
+  left: 50%;
   width: 620px;
   color: #000000;
   background-color: white;
