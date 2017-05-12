@@ -1075,6 +1075,7 @@ body {
 }
 
 .buy:active  {
+  margin-bottom: 10px;
   border-bottom: 0;
   background-color: #518534;
 }
@@ -1576,14 +1577,15 @@ margin-right: 0;
 }
 
 .bottom-navigation:last-of-type a{
-padding-right: 0;
 padding-left: 18px;
+padding-right: 0;
 }
 
 .bottom-navigation a {
   display: inline-block;
   padding: 38px 27px 22px 24px;
   font-size: 18px;
+  font-weight: normal;
   line-height: 24px;
   text-align: right;
   vertical-align: top;
@@ -1606,12 +1608,12 @@ padding-left: 18px;
 
 .footer-main-bottom {
   padding-top: 13px;
-  margin-bottom: 58px;
+  margin-bottom: 50px;
 }
 
 .bottom-main-contacts {
   float: left;
-  width: 350px;
+  width: 330px;
   letter-spacing: 1px;
 }
 
@@ -1631,11 +1633,12 @@ padding-left: 18px;
 
 .bottom-main-contacts .content-contacts{
   margin-top: 10px;
+  letter-spacing: 1.5px;
 }
 
 .feature-list {
   float: right;
-  width: 540px;
+  width: 539px;
   font-size: 0;
   padding: 0;
   margin: 0;
@@ -1650,11 +1653,12 @@ padding-left: 18px;
 .feature-list a {
   display: inline-block;
   padding: 0 16px;
-  margin-right: 27px;
+  margin-right: 26px;
   vertical-align: top;
   font-size: 18px;
   line-height: 18px;
   color: #ffd180;
+  font-weight: normal;
   text-decoration: none;
 }
 
@@ -1662,6 +1666,7 @@ padding-left: 18px;
   margin-right: 0;
   padding-right: 0;
 }
+
 
 .feature-list a:hover {
   text-decoration: underline;
@@ -1937,7 +1942,7 @@ letter-spacing: 1px
 
 .info-product {
   width: 940px;
-  margin-bottom: 70px;
+  margin-bottom: 67px;
 }
 
 body .catalog {
@@ -2627,7 +2632,7 @@ width: 80%;
 .modal-content {
   box-sizing: border-box;
   position: absolute;
-  display: non;
+  display: none;
   margin-left: -190px;
   top: 2520px;
   left: 638px;
@@ -2706,7 +2711,7 @@ width: 80%;
   display: block;
   font-size: 18px;
   font-family: "Cuprum", "Arial", sans-serif;
-  margin-left: -5px;
+  margin-left: -15px;
 }
 
 .appointment-form-email .email-name {
@@ -2718,7 +2723,7 @@ width: 80%;
   width: 100%;
   height: 37px;
   margin: -10px 0 -10px 0;
-  margin-left: -5px;
+  margin-left: -15px;
   padding: 2px 15px;
   font-family: "PTSans", "Arial", sans-serif;
   font-size: 13px;
@@ -2754,8 +2759,7 @@ width: 80%;
 
 .appointment-form-text .text-name {
   display: block;
-  margin-bottom: 9px;
-  margin-left: -5px;
+  margin: 15px 0 9px -15px;
   font-size: 18px;
 }
 
@@ -2764,6 +2768,7 @@ width: 80%;
   width: 100%;
   padding-left: 10px;
   padding-top: 8px;
+  margin-left: -15px;
   height: 113px;
   font-size: 13px;
   font-family: "PTSans", "Arial", sans-serif;
@@ -2811,10 +2816,10 @@ width: 80%;
 }
 
 .modal-content-catalog {
+  display: none;
   box-sizing: border-box;
   position: absolute;
   padding: 50px 80px;
-  display: non;
   z-index: 30;
   top: 412px;
   left: 450px;
