@@ -1045,7 +1045,7 @@ body {
   cursor: pointer;
 }
 
-.product-item .main-price:after {
+.product-item .main-price::after {
   position: absolute;
   content: "";
   top: 0;
@@ -1459,7 +1459,7 @@ background-color: #ba2732;
   position: relative;
 }
 
-.feature-company .item-feature:before {
+.feature-company .item-feature::before {
   position: absolute;
   content: "____";
   left: 1px;
@@ -2054,7 +2054,7 @@ body .catalog {
   margin-left: 21px;
 }
 
-.my-orders:after {
+.my-orders::after{
   position: absolute;
   content: "";
   left: 88px;
