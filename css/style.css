@@ -1793,7 +1793,7 @@ margin-right: 0;
 .social-btn-vk:hover {
   width: 20px;
   height: 12px;
-  background: #ee3643 url(../img/sprite.png);
+  background: #ee3643 url("../img/sprite.png");
   background-position: -93px -89px;
 }
 
