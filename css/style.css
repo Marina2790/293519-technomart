@@ -16,7 +16,7 @@ body {
 
 .sprite {
   display: block;
-  background-image: url("../img/srite.png");
+  background-image: url(../img/srite.png);
   background-repeat: no-repeat;
 }
 
